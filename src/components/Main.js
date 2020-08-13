@@ -4,6 +4,8 @@ import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg from '../images/studio.png';
+import scissorsIcon from '../images/scissorsIcon.svg';
+import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 
 import styles from '../styles/Main.module.scss';
 
@@ -59,6 +61,19 @@ class Main extends Component {
             <p>
               Paul owned and operated many businesses during his time in Hilton Head Island. For the past 20 years, he has been styling out of Waldos Stylist Studios in Cary.
             </p>
+          </div>
+          
+          <div className={styles.scissorsDivider}>
+            <img
+              src={scissorsIcon}
+              className={styles.scissorsIconLeft}
+              alt="Scissors icon right"
+            />
+            <img
+              src={scissorsIcon}
+              className={styles.scissorsIconRight}
+              alt="Scissors icon right"
+            />
           </div>
         </div>
         

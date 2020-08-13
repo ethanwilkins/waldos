@@ -1,5 +1,5 @@
-$black: #120E05;
-$gold: #E6AD39;
+$warmInk: #120E05;
+$decoCoin: #E6AD39;
 
 @font-face {
   font-family: "Raleway";
@@ -27,8 +27,8 @@ body {
 }
 
 ::selection {
-  color: $gold;
-  background: $black;
+  color: $decoCoin;
+  background: $warmInk;
 }
 
 // stops blue selection for tapping of links in mobile
