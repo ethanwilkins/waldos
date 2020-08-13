@@ -1,3 +1,6 @@
+$black: #120E05;
+$gold: #E6AD39;
+
 @font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway.ttf") format("truetype");
@@ -24,8 +27,8 @@ body {
 }
 
 ::selection {
-  color: white;
-  background: black;
+  color: $gold;
+  background: $black;
 }
 
 // stops blue selection for tapping of links in mobile

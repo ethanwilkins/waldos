@@ -26,10 +26,12 @@ $gold: #E6AD39;
 }
 
 .mobileHeaderLogoIcon {
+  @extend .noSelect;
   margin-top: 22px;
 }
 
 .mobileHeaderLogoIconText {
+  @extend .noSelect;
   position: absolute;
   top: 31px;
   left: calc(50% - 5px);
