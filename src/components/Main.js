@@ -51,7 +51,7 @@ class Main extends Component {
             <img
               src={studioImg}
               className={styles.studioImg}
-              alt="Studio image"
+              alt="Studio"
             />
           </div>
           <div className={styles.aboutMe}>
