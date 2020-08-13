@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import mobileHeaderLogoIcon from '../images/mobileHeaderLogoIcon.svg';
+import logo from '../images/logo.svg';
+import hamburgerIcon from '../images/hamburgerIcon.svg';
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg from '../images/studio.png';
 
@@ -13,18 +14,15 @@ class Main extends Component {
       <div>
         <div className={styles.header}>
           <img
-            src={mobileHeaderLogoIcon}
-            className={styles.mobileHeaderLogoIcon}
+            src={logo}
+            className={styles.logo}
             alt="Logo icon"
           />
-          <div className={styles.mobileHeaderLogoIconText}>
-            W
-          </div>
-          <div className={styles.hamburgerIcon}>
-            <div className={styles.hamburgerIconBar}></div>
-            <div className={styles.hamburgerIconBar}></div>
-            <div className={styles.hamburgerIconBar}></div>
-          </div>
+          <img
+            src={hamburgerIcon}
+            className={styles.hamburgerIcon}
+            alt="Logo icon"
+          />
         </div>
         
         

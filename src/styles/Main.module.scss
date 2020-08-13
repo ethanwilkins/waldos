@@ -25,32 +25,15 @@ $gold: #E6AD39;
   text-align: center;
 }
 
-.mobileHeaderLogoIcon {
+.logo {
   @extend .noSelect;
   margin-top: 22px;
-}
-
-.mobileHeaderLogoIconText {
-  @extend .noSelect;
-  position: absolute;
-  top: 31px;
-  left: calc(50% - 5px);
-  color: $gold;
-  font-size: 9.47692px;
 }
 
 .hamburgerIcon {
   position: absolute;
   top: 27px;
   right: 38px;
-}
-
-.hamburgerIconBar {
-  background: $gold;
-  width: 24px;
-  height: 1px;
-  margin-bottom: 8px;
-  border-radius: 5px;
 }
 
 .body {
