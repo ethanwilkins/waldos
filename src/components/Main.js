@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 
 import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
+
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg from '../images/studio.png';
+
 import scissorsIcon from '../images/scissorsIcon.svg';
-import scissorsIconLarge from '../images/scissorsIconLarge.svg';
+//import scissorsIconLarge from '../images/scissorsIconLarge.svg';
+
+
+import getInTouch from '../images/getInTouch.svg';
 
 import styles from '../styles/Main.module.scss';
 
@@ -75,9 +80,29 @@ class Main extends Component {
               alt="Scissors icon right"
             />
           </div>
+          
+          <div className={styles.lineDividerLeft}></div>
+          
+          <div className={styles.largeText}>
+            Looking for a talented stylist that you can trust with your hair?
+          </div>
+          
+          <div className={styles.smallText}>
+            We offer haircut, color, and
+            <br/>
+            highlight services.
+          </div>
+          
+          <div className={styles.mediumText}>
+            For more information, we offer free consultations to schedule appointments and determine cost.
+          </div>
+          
+          <img
+            src={getInTouch}
+            className={styles.getInTouch}
+            alt="Let's Get In Touch!"
+          />
         </div>
-        
-        
         
         <div className={styles.footer}>
         

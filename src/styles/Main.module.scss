@@ -89,6 +89,7 @@ $decoCoin: #E6AD39;
 .scissorsDivider {
   margin-top: 11px;
   width: 71px;
+  height: 25px;
   margin: 0 auto;
 }
 
@@ -100,6 +101,35 @@ $decoCoin: #E6AD39;
   @extend .scissorsIconLeft;
   margin-left: 21px;
   transform: rotate(180deg);
+}
+
+.lineDividerLeft {
+  background: $warmInk;
+  width: 314px;
+  height: 1px;
+  margin: 31px 0px;
+}
+
+.largeText {
+  @extend .aboutMe;
+  font-family: "Raleway Bold";
+  font-size: 30px;
+  color: $decoCoin;
+  margin-bottom: 10px;
+}
+
+.smallText {
+  @extend .aboutMe;
+  margin-bottom: 32px;
+}
+
+.mediumText {
+  @extend .aboutMe;
+  margin-bottom: 42px;
+}
+
+.getInTouch {
+  margin-left: 18px;
 }
 
 .footer {
