@@ -37,6 +37,20 @@ $gold: #E6AD39;
   font-size: 9.47692px;
 }
 
+.hamburgerIcon {
+  position: absolute;
+  top: 27px;
+  right: 38px;
+}
+
+.hamburgerIconBar {
+  background: $gold;
+  width: 24px;
+  height: 1px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
 .body {
 
 }

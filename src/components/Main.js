@@ -18,6 +18,11 @@ class Main extends Component {
           <div className={styles.mobileHeaderLogoIconText}>
             W
           </div>
+          <div className={styles.hamburgerIcon}>
+            <div className={styles.hamburgerIconBar}></div>
+            <div className={styles.hamburgerIconBar}></div>
+            <div className={styles.hamburgerIconBar}></div>
+          </div>
         </div>
         <div className={styles.body}>
           <div className={styles.imageCarousel}>
