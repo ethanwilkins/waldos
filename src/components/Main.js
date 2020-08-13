@@ -50,11 +50,17 @@ class Main extends Component {
             
             <img
               src={studioImg}
-              className={styles.studioImg}
+              className={styles.carouselImg}
               alt="Studio"
             />
           </div>
           <div className={styles.aboutMe}>
+            <p>
+              Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
+            </p>
+            <p>
+              Paul owned and operated many businesses during his time in Hilton Head Island. For the past 20 years, he has been styling out of Waldos Stylist Studios in Cary.
+            </p>
           </div>
         </div>
         
