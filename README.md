@@ -1,5 +1,3 @@
-# ratio
+# Waldos Stylist Studio
 
-Creating typographic systems made easy.
-
-https://typeratio.com
+A static landing page for a hair salon
