@@ -37,7 +37,8 @@ $decoCoin: #E6AD39;
 }
 
 .body {
-
+  background: white;
+  padding-bottom: 1px;
 }
 
 .imageCarousel {
@@ -103,11 +104,36 @@ $decoCoin: #E6AD39;
   transform: rotate(180deg);
 }
 
+.scissorsIconLarge {
+  position: relative;
+  top: -70px;
+  right: 42px;
+  display: block;
+  float: right;
+}
+
 .lineDividerLeft {
   background: $warmInk;
   width: 314px;
   height: 1px;
   margin: 31px 0px;
+}
+
+.lineDividerRight {
+  @extend .lineDividerLeft;
+  position: relative;
+  left: calc(100% - 314px);
+}
+
+.lineDividerLeftLower {
+  @extend .lineDividerLeft;
+  margin-top: 65px;
+}
+
+.lineDividerRightLower {
+  @extend .lineDividerRight;
+  margin-top: -14px;
+  margin-bottom: 12px;
 }
 
 .largeText {
@@ -125,7 +151,7 @@ $decoCoin: #E6AD39;
 
 .mediumText {
   @extend .aboutMe;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .getInTouch {
@@ -133,5 +159,17 @@ $decoCoin: #E6AD39;
 }
 
 .footer {
+  width: 100%;
+  background: $warmInk;
+}
 
+.largeFooterText {
+  @extend .largeText;
+  white-space: nowrap;
+  margin-top: 65px;
+}
+
+.footerText {
+  @extend .aboutMe;
+  color: white;
 }

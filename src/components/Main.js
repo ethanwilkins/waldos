@@ -7,8 +7,7 @@ import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg from '../images/studio.png';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
-//import scissorsIconLarge from '../images/scissorsIconLarge.svg';
-
+import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 
 import getInTouch from '../images/getInTouch.svg';
 
@@ -32,11 +31,8 @@ class Main extends Component {
           />
         </div>
         
-        
-        
         <div className={styles.body}>
           <div className={styles.imageCarousel}>
-          
             <div className={styles.imageCarouselButtonLeft}>
               <img
                 src={imageCarouselArrow}
@@ -52,7 +48,7 @@ class Main extends Component {
                 alt="Carousel arrow right"
               />
             </div>
-            
+
             <img
               src={studioImg}
               className={styles.carouselImg}
@@ -86,26 +82,61 @@ class Main extends Component {
           <div className={styles.largeText}>
             Looking for a talented stylist that you can trust with your hair?
           </div>
-          
           <div className={styles.smallText}>
             We offer haircut, color, and
             <br/>
             highlight services.
           </div>
-          
           <div className={styles.mediumText}>
             For more information, we offer free consultations to schedule appointments and determine cost.
           </div>
-          
           <img
             src={getInTouch}
             className={styles.getInTouch}
             alt="Let's Get In Touch!"
           />
+          
+          <div className={styles.lineDividerRight}></div>
+          
+          <div className={styles.largeText}>
+            Looking for a welcoming studio space to rent?
+          </div>
+          <div className={styles.mediumText}>
+            Contact us today for a free consultation on availability and pricing!
+          </div>
+          <img
+            src={getInTouch}
+            className={styles.getInTouch}
+            alt="Let's Get In Touch!"
+          />
+          <img
+            src={scissorsIconLarge}
+            className={styles.scissorsIconLarge}
+            alt="Large scissors icon"
+          />
+          <div className={styles.lineDividerLeftLower}></div>
+          <div className={styles.lineDividerRightLower}></div>
         </div>
         
         <div className={styles.footer}>
-        
+          <div className={styles.largeFooterText}>
+            Let's Get In Touch!
+          </div>
+          <div className={styles.footerText}>
+            Waldo Stylist Studio
+          </div>
+          <div className={styles.footerText}>
+            Phone number: 919.606.5629
+          </div>
+          <div className={styles.footerText}>
+            Email: Masouraspaul@gmail.com
+          </div>
+          <div className={styles.footerText}>
+            Address: 213 Waldo St. Cary NC 27511
+          </div>
+          <div className={styles.footerText}>
+            All Rights Reserved 2020
+          </div>
         </div>
       </div>
     );
