@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Navbar from '../components/Navbar';
+
 import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
 
@@ -22,18 +24,7 @@ class Main extends Component {
 
     return (
       <div>
-        <div className={styles.navbar}>
-          <img
-            src={logo}
-            className={styles.logo}
-            alt="Logo icon"
-          />
-          <img
-            src={hamburgerIcon}
-            className={styles.hamburgerIcon}
-            alt="Logo icon"
-          />
-        </div>
+        <Navbar />
         
         <div className={styles.body}>
           <div className={styles.imageCarousel}>
