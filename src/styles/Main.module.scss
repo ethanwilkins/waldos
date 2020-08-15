@@ -80,7 +80,6 @@ $decoCoin: #E6AD39;
 }
 
 .aboutMe {
-  width: 100%;
   margin: 0 auto;
   width: 378px;
   font-size: 18px;
@@ -159,6 +158,7 @@ $decoCoin: #E6AD39;
 }
 
 .footer {
+  position: relative;
   width: 100%;
   background: $warmInk;
   padding-bottom: 50px;
@@ -173,4 +173,12 @@ $decoCoin: #E6AD39;
 .footerText {
   @extend .aboutMe;
   color: white;
+}
+
+.map {
+  position: absolute;
+  left: calc(50% - 189px);
+  width: 378px;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }

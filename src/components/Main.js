@@ -4,12 +4,16 @@ import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
 
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
-import studioImg from '../images/studio.png';
+import studioImg1 from '../images/studio_1.jpg';
+//import studioImg2 from '../images/studio_2.jpg';
+//import studioImg3 from '../images/studio_3.jpg';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 
 import getInTouch from '../images/getInTouch.svg';
+
+import map from '../images/map.png';
 
 import styles from '../styles/Main.module.scss';
 
@@ -50,7 +54,7 @@ class Main extends Component {
             </div>
 
             <img
-              src={studioImg}
+              src={studioImg1}
               className={styles.carouselImg}
               alt="Studio"
             />
@@ -137,6 +141,12 @@ class Main extends Component {
           <div className={styles.footerText}>
             All Rights Reserved 2020
           </div>
+          
+          <img
+            src={map}
+            className={styles.map}
+            alt="Map"
+          />
         </div>
       </div>
     );
