@@ -45,7 +45,7 @@ class Navbar extends Component {
             alt="Logo icon"
           />
         </div>
-        <div 
+        <div
           className={cx(styles.navbarInner, {
             fadedOut: !open
           })}
@@ -67,6 +67,11 @@ class Navbar extends Component {
               </div>
             </div>
           </div>
+          <div
+            className={cx(styles.menuBackdrop, {
+              expanded: open
+            })}
+          ></div>
         </div>
       </div>
     );
