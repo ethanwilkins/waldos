@@ -55,6 +55,18 @@ class Navbar extends Component {
             className={styles.navbarButton}
             alt="X icon"
           />
+          <div className={styles.menu}>
+            <div className={styles.menuButton}>
+              <div className={styles.menuButtonText}>
+                Info
+              </div>
+            </div>
+            <div className={styles.menuButton}>
+              <div className={styles.menuButtonText}>
+                Contact
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
