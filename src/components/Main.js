@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import Navbar from '../components/Navbar';
 
-import logo from '../images/logo.svg';
-import hamburgerIcon from '../images/hamburgerIcon.svg';
-
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg1 from '../images/studio_1.jpg';
 //import studioImg2 from '../images/studio_2.jpg';
@@ -12,9 +9,7 @@ import studioImg1 from '../images/studio_1.jpg';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
-
 import getInTouch from '../images/getInTouch.svg';
-
 import map from '../images/map.png';
 
 import styles from '../styles/Main.module.scss';
