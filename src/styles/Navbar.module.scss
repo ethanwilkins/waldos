@@ -61,6 +61,7 @@ $decoCoin: #E6AD39;
 }
 
 .menuButtonText {
+  @extend .noSelect;
   color: $decoCoin;
   position: absolute;
   top: 23px;
