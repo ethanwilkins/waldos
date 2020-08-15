@@ -10,9 +10,21 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 class Navbar extends Component {
-  state = {
-    open: false
-  };
+  constructor(props) {
+    super(props);
+    this.navbar = React.createRef();
+    this.state = {
+      open: false
+    };
+  }
+  
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
+  }
   
   handleClick = () => {
     const { open } = this.state;
@@ -21,15 +33,27 @@ class Navbar extends Component {
     });
   };
   
+  // closes navbar menu if user clicks anywhere outside of navbar or menu
+  handleClickOutside = (event) => {
+    const { open } = this.state;
+    if (open) {
+      if (!this.navbar.current.contains(event.target)) {
+        this.setState({
+          open: false
+        });
+      }
+    }
+  };
+  
   render() {
     const { open } = this.state;
     
     return (
       <div
-        onClick={this.handleClick}
         className={styles.navbar}
+        ref={this.navbar}
       >
-        <div 
+        <div
           className={cx(styles.navbarInner, {
             fadedOut: open
           })}
@@ -40,6 +64,7 @@ class Navbar extends Component {
             alt="Logo icon"
           />
           <img
+            onClick={this.handleClick}
             src={hamburgerIcon}
             className={styles.navbarButton}
             alt="Logo icon"
@@ -51,6 +76,7 @@ class Navbar extends Component {
           })}
         >
           <img
+            onClick={this.handleClick}
             src={xIcon}
             className={styles.navbarButton}
             alt="X icon"
