@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
 import Navbar from '../components/Navbar';
 
@@ -14,12 +15,30 @@ import map from '../images/map.png';
 
 import styles from '../styles/Main.module.scss';
 
-class Main extends Component {
-  render() {
+const scroller = Scroll.animateScroll;
 
+const scrollerOptions = {
+        duration: 1000,
+        delay: 50,
+        smooth: true
+      };
+
+class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.firstDivider = React.createRef();
+    this.footer = React.createRef();
+  }
+  
+  handleInfoButtonClick = () => {
+    const distanceFromTop = (window.pageYOffset + this.firstDivider.current.getBoundingClientRect().top) - 70;
+    scroller.scrollMore(distanceFromTop, scrollerOptions);
+  };
+  
+  render() {
     return (
       <div>
-        <Navbar />
+        <Navbar handleInfoButtonClick={this.handleInfoButtonClick} />
         
         <div className={styles.body}>
           <div className={styles.imageCarousel}>
@@ -67,7 +86,9 @@ class Main extends Component {
             />
           </div>
           
-          <div className={styles.lineDividerLeft}></div>
+          <div
+            ref={this.firstDivider}
+            className={styles.lineDividerLeft}></div>
           
           <div className={styles.largeText}>
             Looking for a talented stylist that you can trust with your hair?
@@ -108,7 +129,10 @@ class Main extends Component {
           <div className={styles.lineDividerRightLower}></div>
         </div>
         
-        <div className={styles.footer}>
+        <div
+          ref={this.footer}
+          className={styles.footer}
+        >
           <div className={styles.largeFooterText}>
             Let's Get In Touch!
           </div>

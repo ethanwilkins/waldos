@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
@@ -45,6 +46,13 @@ class Navbar extends Component {
     }
   };
   
+  handleInfoButtonClick = () => {
+    this.props.handleInfoButtonClick();
+    this.setState({
+      open: false
+    });
+  };
+  
   render() {
     const { open } = this.state;
     
@@ -83,7 +91,10 @@ class Navbar extends Component {
           />
           <div className={styles.menu}>
             <div className={styles.menuButton}>
-              <div className={styles.menuButtonText}>
+              <div
+                onClick={this.handleInfoButtonClick}
+                className={styles.menuButtonText}
+              >
                 Info
               </div>
             </div>
@@ -103,5 +114,9 @@ class Navbar extends Component {
     );
   }
 }
+
+Navbar.propTypes = {
+  handleInfoButtonClick: PropTypes.func.isRequired
+};
 
 export default Navbar;
