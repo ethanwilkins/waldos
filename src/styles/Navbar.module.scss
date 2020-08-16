@@ -39,6 +39,15 @@ $decoCoin: #E6AD39;
   right: 38px;
 }
 
+.navbarButtonTouchTarget {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
 .navbarInner {
   transition: opacity 300ms ease-in-out;
   width: 100%;

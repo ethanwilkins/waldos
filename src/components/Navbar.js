@@ -84,6 +84,9 @@ class Navbar extends Component {
         ref={this.navbar}
       >
         <div
+          onClick={this.handleClick}
+          className={styles.navbarButtonTouchTarget}></div>
+        <div
           className={cx(styles.navbarInner, {
             fadedOut: open
           })}
@@ -95,7 +98,6 @@ class Navbar extends Component {
             alt="Logo icon"
           />
           <img
-            onClick={this.handleClick}
             src={hamburgerIcon}
             className={styles.navbarButton}
             alt="Logo icon"
@@ -107,7 +109,6 @@ class Navbar extends Component {
           })}
         >
           <img
-            onClick={this.handleClick}
             src={xIcon}
             className={styles.navbarButton}
             alt="X icon"
