@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg1 from '../images/studio_1.jpg';
@@ -84,8 +83,5 @@ class ImageCarousel extends Component {
     );
   }
 }
-
-ImageCarousel.propTypes = {
-};
 
 export default ImageCarousel;
