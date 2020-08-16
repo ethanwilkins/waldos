@@ -1,6 +1,17 @@
 $warmInk: #120E05;
 $decoCoin: #E6AD39;
 
+// stops blue selection for tapping of links in mobile
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .imageCarousel {
   position: relative;
   width: 100%;
@@ -10,6 +21,7 @@ $decoCoin: #E6AD39;
 }
 
 .imageCarouselButtonLeft {
+  @extend .noSelect;
   position: absolute;
   top: 152px;
   left: 15px;
