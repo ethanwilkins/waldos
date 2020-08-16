@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 
 import Navbar from '../components/Navbar';
-
-import imageCarouselArrow from '../images/imageCarouselArrow.svg';
-import studioImg1 from '../images/studio_1.jpg';
-//import studioImg2 from '../images/studio_2.jpg';
-//import studioImg3 from '../images/studio_3.jpg';
+import ImageCarousel from '../components/ImageCarousel';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
@@ -53,29 +49,8 @@ class Main extends Component {
         />
         
         <div className={styles.body}>
-          <div className={styles.imageCarousel}>
-            <div className={styles.imageCarouselButtonLeft}>
-              <img
-                src={imageCarouselArrow}
-                className={styles.imageCarouselArrowLeft}
-                alt="Carousel arrow left"
-              />
-            </div>
-            
-            <div className={styles.imageCarouselButtonRight}>
-              <img
-                src={imageCarouselArrow}
-                className={styles.imageCarouselArrowRight}
-                alt="Carousel arrow right"
-              />
-            </div>
-
-            <img
-              src={studioImg1}
-              className={styles.carouselImg}
-              alt="Studio"
-            />
-          </div>
+          <ImageCarousel />
+          
           <div className={styles.aboutMe}>
             <p>
               Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
