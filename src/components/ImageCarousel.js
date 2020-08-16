@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isAndroid } from 'react-device-detect';
 
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg1 from '../images/studio_1.jpg';
@@ -20,6 +21,10 @@ class ImageCarousel extends Component {
     this.setState({
       imageIndex: (imageIndex === 1 ? 3 : imageIndex - 1)
     });
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   handleRightButtonClick = () => {
@@ -27,6 +32,10 @@ class ImageCarousel extends Component {
     this.setState({
       imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1)
     });
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   render() {

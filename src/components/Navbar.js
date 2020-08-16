@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { isAndroid } from 'react-device-detect';
 import Scroll from 'react-scroll';
 
 import logo from '../images/logo.svg';
@@ -41,6 +42,10 @@ class Navbar extends Component {
     this.setState({
       open: !open
     });
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   // closes navbar menu if user clicks anywhere outside of navbar or menu
@@ -51,6 +56,10 @@ class Navbar extends Component {
         this.setState({
           open: false
         });
+        // haptic feedback for android
+        if (isAndroid) {
+          window.navigator.vibrate(1);
+        }
       }
     }
   };
@@ -59,6 +68,10 @@ class Navbar extends Component {
     const distanceScrolled = window.pageYOffset;
     // subtracts distance scrolled from 
     scroller.scrollMore(0 - distanceScrolled, scrollerOptions);
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   handleInfoButtonClick = () => {
@@ -66,6 +79,10 @@ class Navbar extends Component {
     this.setState({
       open: false
     });
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   handleContactButtonClick = () => {
@@ -73,6 +90,10 @@ class Navbar extends Component {
     this.setState({
       open: false
     });
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   render() {

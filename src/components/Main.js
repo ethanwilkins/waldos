@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
+import { isAndroid } from 'react-device-detect';
 
 import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
@@ -31,6 +32,10 @@ class Main extends Component {
     const distanceScrolled = window.pageYOffset;
     // subtracts distance scrolled from 
     scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   handleContactButtonClick = () => {
@@ -38,6 +43,10 @@ class Main extends Component {
     const distanceScrolled = window.pageYOffset;
     // subtracts distance scrolled from 
     scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
+    // haptic feedback for android
+    if (isAndroid) {
+      window.navigator.vibrate(1);
+    }
   };
   
   render() {
