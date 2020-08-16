@@ -18,7 +18,7 @@ import styles from '../styles/Main.module.scss';
 const scroller = Scroll.animateScroll;
 
 const scrollerOptions = {
-        duration: 1000,
+        duration: 300,
         delay: 50,
         smooth: true
       };

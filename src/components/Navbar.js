@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Scroll from 'react-scroll';
 
 import logo from '../images/logo.svg';
 import hamburgerIcon from '../images/hamburgerIcon.svg';
@@ -9,6 +10,14 @@ import styles from '../styles/Navbar.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
+
+const scroller = Scroll.animateScroll;
+
+const scrollerOptions = {
+        duration: 300,
+        delay: 50,
+        smooth: true
+      };
 
 class Navbar extends Component {
   constructor(props) {
@@ -46,6 +55,12 @@ class Navbar extends Component {
     }
   };
   
+  handleLogoClick = () => {
+    const distanceScrolled = window.pageYOffset;
+    // subtracts distance scrolled from 
+    scroller.scrollMore(0 - distanceScrolled, scrollerOptions);
+  };
+  
   handleInfoButtonClick = () => {
     this.props.handleInfoButtonClick();
     this.setState({
@@ -74,6 +89,7 @@ class Navbar extends Component {
           })}
         >
           <img
+            onClick={this.handleLogoClick}
             src={logo}
             className={styles.logo}
             alt="Logo icon"
