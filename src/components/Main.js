@@ -31,14 +31,26 @@ class Main extends Component {
   }
   
   handleInfoButtonClick = () => {
-    const distanceFromTop = (window.pageYOffset + this.firstDivider.current.getBoundingClientRect().top) - 70;
-    scroller.scrollMore(distanceFromTop, scrollerOptions);
+    const elementDistanceFromTop = (window.pageYOffset + this.firstDivider.current.getBoundingClientRect().top) - 70;
+    const distanceScrolled = window.pageYOffset;
+    // subtracts distance scrolled from 
+    scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
+  };
+  
+  handleContactButtonClick = () => {
+    const elementDistanceFromTop = (window.pageYOffset + this.footer.current.getBoundingClientRect().top) - 70;
+    const distanceScrolled = window.pageYOffset;
+    // subtracts distance scrolled from 
+    scroller.scrollMore(elementDistanceFromTop - distanceScrolled, scrollerOptions);
   };
   
   render() {
     return (
       <div>
-        <Navbar handleInfoButtonClick={this.handleInfoButtonClick} />
+        <Navbar
+          handleInfoButtonClick={this.handleInfoButtonClick}
+          handleContactButtonClick={this.handleContactButtonClick}
+        />
         
         <div className={styles.body}>
           <div className={styles.imageCarousel}>

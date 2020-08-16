@@ -53,6 +53,13 @@ class Navbar extends Component {
     });
   };
   
+  handleContactButtonClick = () => {
+    this.props.handleContactButtonClick();
+    this.setState({
+      open: false
+    });
+  };
+  
   render() {
     const { open } = this.state;
     
@@ -90,15 +97,17 @@ class Navbar extends Component {
             alt="X icon"
           />
           <div className={styles.menu}>
-            <div className={styles.menuButton}>
-              <div
-                onClick={this.handleInfoButtonClick}
-                className={styles.menuButtonText}
-              >
+            <div
+              onClick={this.handleInfoButtonClick}
+              className={styles.menuButton}>
+              <div className={styles.menuButtonText}>
                 Info
               </div>
             </div>
-            <div className={styles.menuButton}>
+            <div
+              onClick={this.handleContactButtonClick}
+              className={styles.menuButton}
+            >
               <div className={styles.menuButtonText}>
                 Contact
               </div>
@@ -116,7 +125,8 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  handleInfoButtonClick: PropTypes.func.isRequired
+  handleInfoButtonClick: PropTypes.func.isRequired,
+  handleContactButtonClick: PropTypes.func.isRequired
 };
 
 export default Navbar;
