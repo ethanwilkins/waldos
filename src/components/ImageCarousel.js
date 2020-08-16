@@ -13,7 +13,7 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
     
 const swipeableConfig = {
-        delta: 5,                             // min distance(px) before a swipe starts
+        delta: 5,                              // min distance(px) before a swipe starts
         trackTouch: true,                      // track touch input
         trackMouse: true,                      // track mouse input
         rotationAngle: window.orientation      // set a rotation angle

@@ -98,6 +98,7 @@ class Main extends Component {
             For more information, we offer free consultations to schedule appointments and determine cost.
           </div>
           <img
+            onClick={this.handleContactButtonClick}
             src={getInTouch}
             className={styles.getInTouch}
             alt="Let's Get In Touch!"
@@ -112,6 +113,7 @@ class Main extends Component {
             Contact us today for a free consultation on availability and pricing!
           </div>
           <img
+            onClick={this.handleContactButtonClick}
             src={getInTouch}
             className={styles.getInTouch}
             alt="Let's Get In Touch!"
