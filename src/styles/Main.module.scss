@@ -7,6 +7,11 @@ $decoCoin: #E6AD39;
   src: url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Raleway Extra Bold";
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+
 // stops blue selection for tapping of links in mobile
 .noSelect {
   -webkit-touch-callout: none;
@@ -75,6 +80,13 @@ $decoCoin: #E6AD39;
   float: right;
 }
 
+.scissorsIconLargeDesktop {
+  @extend .scissorsIconLarge;
+  visibility: hidden;
+  top: -87px;
+  right: -170px;
+}
+
 .lineDividerLeft {
   background: $warmInk;
   width: 314px;
@@ -101,7 +113,7 @@ $decoCoin: #E6AD39;
 
 .largeText {
   @extend .aboutMe;
-  font-family: "Raleway Bold";
+  font-family: "Raleway Extra Bold";
   font-size: 30px;
   color: $decoCoin;
   margin-bottom: 10px;
@@ -155,18 +167,45 @@ $decoCoin: #E6AD39;
     margin-top: 75px;
   }
   .sectionsContainer {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     overflow: hidden;
+    margin-top: 80px;
   }
   .customerSection {
     float: left;
-    width: 40%;
-    margin-right: 5%;
+    width: 44%;
   }
   .stylistSection {
     @extend .customerSection;
-    margin-left: 5%;
+    margin-left: 11%;
+  }
+  .largeText {
+    width: 80%;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .largeText, .mediumText {
+    margin-top: initial;
+  }
+  .mediumText, .smallText {
+    font-size: 18px;
+    margin-top: -7px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .smallText {
+    margin-bottom: 35px;
+  }
+  .getInTouch {
+    margin-left: -4px;
+    margin-top: -7px;
+  }
+  .scissorsIconLarge {
+    visibility: hidden;
+  }
+  .scissorsIconLargeDesktop {
+    visibility: visible;
   }
   .scissorsDivider {
     visibility: hidden;
@@ -179,6 +218,7 @@ $decoCoin: #E6AD39;
   }
   .lineDividerRight {
     visibility: hidden;
+    margin: initial;
   }
   .lineDividerLeftLower {
     visibility: hidden;

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 import { isAndroid } from 'react-device-detect';
+import mobile from 'is-mobile';
 
 import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
 import scissorsIconDesktop from '../images/scissorsIconDesktop.svg';
-import scissorsIconLargeDesktop from '../images/scissorsIconLargeDesktop.png';
+import scissorsIconLargeDesktop from '../images/scissorsIconLargeDesktop.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 import getInTouch from '../images/getInTouch.svg';
 import map from '../images/map.png';
@@ -104,7 +105,7 @@ class Main extends Component {
           <div className={styles.sectionsContainer}>
             <div className={styles.customerSection}>
               <div className={styles.largeText}>
-                Looking For A Talented Stylist That You Can Trust With Your Hair?
+                Looking For A{!mobile() ? <br/> : ''} Talented Stylist That You Can Trust With Your Hair?
               </div>
               <div className={styles.smallText}>
                 We offer haircut, color, and
@@ -140,6 +141,11 @@ class Main extends Component {
               <img
                 src={scissorsIconLarge}
                 className={styles.scissorsIconLarge}
+                alt="Large scissors icon"
+              />
+              <img
+                src={scissorsIconLargeDesktop}
+                className={styles.scissorsIconLargeDesktop}
                 alt="Large scissors icon"
               />
             </div>
