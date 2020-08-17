@@ -123,3 +123,22 @@ $decoCoin: #E6AD39;
   @extend .desktopInfoButton;
   right: 88px;
 }
+
+.innerMobile {
+  visibility: visible;
+}
+
+.innerDesktop {
+  visibility: hidden;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1080px) {
+  .innerMobile {
+    visibility: hidden;
+    z-index: -1;
+  }
+  .innerDesktop {
+    visibility: visible;
+  }
+}

@@ -102,77 +102,73 @@ class Navbar extends Component {
     
     return (
       <div className={styles.navbar} ref={this.navbar}>
-        {!mobile() &&
-          <div>
-            <div onClick={this.handleLogoClick} className={styles.desktopName}>
-              Waldos Stylist Studio
-            </div>
-            <div onClick={this.handleInfoButtonClick} className={styles.desktopInfoButton}>
-              Info
-            </div>
-            <div onClick={this.handleContactButtonClick} className={styles.desktopContactButton}>
-              Contact
-            </div>
+        <div className={styles.innerDesktop}>
+          <div onClick={this.handleLogoClick} className={styles.desktopName}>
+            Waldos Stylist Studio
           </div>
-        }
-        
-        {mobile() &&
-          <div>
-            <div
-              onClick={this.handleClick}
-              className={styles.navbarButtonTouchTarget}></div>
-            <div
-              className={cx(styles.navbarInner, {
-                fadedOut: open
-              })}
-            >
-              <img
-                onClick={this.handleLogoClick}
-                src={logo}
-                className={styles.logo}
-                alt="Logo icon"
-              />
-              <img
-                src={hamburgerIcon}
-                className={styles.navbarButton}
-                alt="Logo icon"
-              />
-            </div>
-            <div
-              className={cx(styles.navbarInner, {
-                fadedOut: !open
-              })}
-            >
-              <img
-                src={xIcon}
-                className={styles.navbarButton}
-                alt="X icon"
-              />
-              <div className={styles.menu}>
-                <div
-                  onClick={this.handleInfoButtonClick}
-                  className={styles.menuButton}>
-                  <div className={styles.menuButtonText}>
-                    Info
-                  </div>
-                </div>
-                <div
-                  onClick={this.handleContactButtonClick}
-                  className={styles.menuButton}
-                >
-                  <div className={styles.menuButtonText}>
-                    Contact
-                  </div>
+          <div onClick={this.handleInfoButtonClick} className={styles.desktopInfoButton}>
+            Info
+          </div>
+          <div onClick={this.handleContactButtonClick} className={styles.desktopContactButton}>
+            Contact
+          </div>
+        </div>
+      
+        <div className={styles.innerMobile}>
+          <div
+            onClick={this.handleClick}
+            className={styles.navbarButtonTouchTarget}></div>
+          <div
+            className={cx(styles.navbarInner, {
+              fadedOut: open
+            })}
+          >
+            <img
+              onClick={this.handleLogoClick}
+              src={logo}
+              className={styles.logo}
+              alt="Logo icon"
+            />
+            <img
+              src={hamburgerIcon}
+              className={styles.navbarButton}
+              alt="Logo icon"
+            />
+          </div>
+          <div
+            className={cx(styles.navbarInner, {
+              fadedOut: !open
+            })}
+          >
+            <img
+              src={xIcon}
+              className={styles.navbarButton}
+              alt="X icon"
+            />
+            <div className={styles.menu}>
+              <div
+                onClick={this.handleInfoButtonClick}
+                className={styles.menuButton}>
+                <div className={styles.menuButtonText}>
+                  Info
                 </div>
               </div>
               <div
-                className={cx(styles.menuBackdrop, {
-                  expanded: open
-                })}
-              ></div>
+                onClick={this.handleContactButtonClick}
+                className={styles.menuButton}
+              >
+                <div className={styles.menuButtonText}>
+                  Contact
+                </div>
+              </div>
             </div>
+            <div
+              className={cx(styles.menuBackdrop, {
+                expanded: open
+              })}
+            ></div>
           </div>
-        }
+        </div>
       </div>
     );
   }
