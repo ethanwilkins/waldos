@@ -2,6 +2,12 @@ $warmInk: #120E05;
 $decoCoin: #E6AD39;
 
 @font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway.ttf") format("truetype");
+}
+
+
+@font-face {
   font-family: "Raleway Bold";
   src: url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
@@ -91,4 +97,28 @@ $decoCoin: #E6AD39;
 
 .expanded {
   height: 144px;
+}
+
+.desktopName {
+  @extend .noSelect;
+  color: $decoCoin;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  font-family: "Raleway Bold";
+  margin-top: 23px;
+  cursor: pointer;
+}
+
+.desktopInfoButton {
+  @extend .desktopName;
+  font-family: "Raleway";
+  position: absolute;
+  top: 23px;
+  right: 212px;
+  margin-top: 0;
+}
+
+.desktopContactButton {
+  @extend .desktopInfoButton;
+  right: 88px;
 }
