@@ -20,6 +20,11 @@ $decoCoin: #E6AD39;
   background: $warmInk;
 }
 
+.desktopImageCarousel {
+  @extend .imageCarousel;
+  height: 648px;
+}
+
 .imageCarouselButtonLeft {
   @extend .noSelect;
   position: absolute;
@@ -48,6 +53,33 @@ $decoCoin: #E6AD39;
 .imageCarouselArrowRight {
   @extend .imageCarouselArrowLeft;
   transform: rotate(-180deg);
+}
+
+.ellipseButtons {
+  border-radius: 9px;
+  background: $warmInk;
+  width: 144px;
+  height: 36px;
+  position: absolute;
+  top: 576px;
+  left: calc(50% - 72px);
+  z-index: 5;
+}
+
+.ellipseButtonsInner {
+  position: absolute;
+  top: 9px;
+  left: 46px;
+}
+
+.ellipseButton {
+  border-radius: 50%;
+  background: $decoCoin;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .carouselImg {

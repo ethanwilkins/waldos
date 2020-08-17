@@ -1,3 +1,4 @@
+$veryIvory: #FFFDFB;
 $warmInk: #120E05;
 $decoCoin: #E6AD39;
 
@@ -19,7 +20,7 @@ $decoCoin: #E6AD39;
 
 .body {
   margin-top: 72px;
-  background: white;
+  background: $veryIvory;
   padding-bottom: 1px;
 }
 
@@ -116,7 +117,7 @@ $decoCoin: #E6AD39;
 
 .footerText {
   @extend .aboutMe;
-  color: white;
+  color: $veryIvory;
 }
 
 .map {
