@@ -7,6 +7,7 @@ import ImageCarousel from '../components/ImageCarousel';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
 import scissorsIconDesktop from '../images/scissorsIconDesktop.svg';
+import scissorsIconLargeDesktop from '../images/scissorsIconLargeDesktop.png';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 import getInTouch from '../images/getInTouch.svg';
 import map from '../images/map.png';
@@ -100,43 +101,50 @@ class Main extends Component {
             ref={this.firstDivider}
             className={styles.lineDividerLeft}></div>
           
-          <div className={styles.largeText}>
-            Looking for a talented stylist that you can trust with your hair?
+          <div className={styles.sectionsContainer}>
+            <div className={styles.customerSection}>
+              <div className={styles.largeText}>
+                Looking For A Talented Stylist That You Can Trust With Your Hair?
+              </div>
+              <div className={styles.smallText}>
+                We offer haircut, color, and
+                <br/>
+                highlight services.
+              </div>
+              <div className={styles.mediumText}>
+                For more information, we offer free consultations to schedule appointments and determine cost.
+              </div>
+              <img
+                onClick={this.handleContactButtonClick}
+                src={getInTouch}
+                className={styles.getInTouch}
+                alt="Let's Get In Touch!"
+              />
+            </div>
+            
+            <div className={styles.lineDividerRight}></div>
+            
+            <div className={styles.stylistSection}>
+              <div className={styles.largeText}>
+                Looking For A Welcoming Studio Space To Rent?
+              </div>
+              <div className={styles.mediumText}>
+                Contact us today for a free consultation on availability and pricing!
+              </div>
+              <img
+                onClick={this.handleContactButtonClick}
+                src={getInTouch}
+                className={styles.getInTouch}
+                alt="Let's Get In Touch!"
+              />
+              <img
+                src={scissorsIconLarge}
+                className={styles.scissorsIconLarge}
+                alt="Large scissors icon"
+              />
+            </div>
           </div>
-          <div className={styles.smallText}>
-            We offer haircut, color, and
-            <br/>
-            highlight services.
-          </div>
-          <div className={styles.mediumText}>
-            For more information, we offer free consultations to schedule appointments and determine cost.
-          </div>
-          <img
-            onClick={this.handleContactButtonClick}
-            src={getInTouch}
-            className={styles.getInTouch}
-            alt="Let's Get In Touch!"
-          />
           
-          <div className={styles.lineDividerRight}></div>
-          
-          <div className={styles.largeText}>
-            Looking for a welcoming studio space to rent?
-          </div>
-          <div className={styles.mediumText}>
-            Contact us today for a free consultation on availability and pricing!
-          </div>
-          <img
-            onClick={this.handleContactButtonClick}
-            src={getInTouch}
-            className={styles.getInTouch}
-            alt="Let's Get In Touch!"
-          />
-          <img
-            src={scissorsIconLarge}
-            className={styles.scissorsIconLarge}
-            alt="Large scissors icon"
-          />
           <div className={styles.lineDividerLeftLower}></div>
           <div className={styles.lineDividerRightLower}></div>
         </div>

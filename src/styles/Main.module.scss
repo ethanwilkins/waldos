@@ -154,10 +154,39 @@ $decoCoin: #E6AD39;
     font-size: 24px;
     margin-top: 75px;
   }
+  .sectionsContainer {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .customerSection {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+  }
+  .stylistSection {
+    @extend .customerSection;
+    margin-left: 5%;
+  }
   .scissorsDivider {
     visibility: hidden;
   }
   .scissorsContainerDesktop {
     visibility: visible;
+  }
+  .lineDividerLeft {
+    width: 475px;
+  }
+  .lineDividerRight {
+    visibility: hidden;
+  }
+  .lineDividerLeftLower {
+    visibility: hidden;
+  }
+  .lineDividerRightLower {
+    visibility: visible;
+    margin-bottom: 80px;
+    width: 475px;
+    left: calc(100% - 475px);
   }
 }
