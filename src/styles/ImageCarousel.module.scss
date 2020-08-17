@@ -20,11 +20,6 @@ $decoCoin: #E6AD39;
   background: $warmInk;
 }
 
-.desktopImageCarousel {
-  @extend .imageCarousel;
-  height: 648px;
-}
-
 .imageCarouselButtonLeft {
   @extend .noSelect;
   position: absolute;
@@ -63,7 +58,8 @@ $decoCoin: #E6AD39;
   position: absolute;
   top: 576px;
   left: calc(50% - 72px);
-  z-index: 5;
+  visibility: hidden;
+  z-index: -1;
 }
 
 .ellipseButtonsInner {
@@ -93,4 +89,18 @@ $decoCoin: #E6AD39;
 .fadedOut {
   opacity: 0;
   z-index: -1;
+}
+
+@media only screen and (min-width: 1080px) {
+  .mobileButtons {
+    visibility: hidden;
+    z-index: -1;
+  }
+  .ellipseButtons {
+    visibility: visible;
+    z-index: 5;
+  }
+  .imageCarousel {
+    height: 648px;
+  }
 }

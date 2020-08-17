@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { isAndroid } from 'react-device-detect';
-import mobile from 'is-mobile';
 import Scroll from 'react-scroll';
 
 import logo from '../images/logo.svg';

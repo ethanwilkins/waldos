@@ -72,41 +72,37 @@ class ImageCarousel extends Component {
     
     return (
       <Swipeable onSwiped={(eventData) => this.handleSwipe(eventData.dir)} {...swipeableConfig}>
-        <div className={mobile() ? styles.imageCarousel : styles.desktopImageCarousel}>
-          {mobile() &&
-            <div>   
-              <div
-                onClick={this.handleLeftButtonClick}
-                className={styles.imageCarouselButtonLeft}
-              >
-                <img
-                  src={imageCarouselArrow}
-                  className={styles.imageCarouselArrowLeft}
-                  alt="Carousel arrow left"
-                />
-              </div>
-              
-              <div
-                onClick={this.handleRightButtonClick}
-                className={styles.imageCarouselButtonRight}
-              >
-                <img
-                  src={imageCarouselArrow}
-                  className={styles.imageCarouselArrowRight}
-                  alt="Carousel arrow right"
-                />
-              </div>
+        <div className={styles.imageCarousel}>
+          <div className={styles.mobileButtons}>
+            <div
+              onClick={this.handleLeftButtonClick}
+              className={styles.imageCarouselButtonLeft}
+            >
+              <img
+                src={imageCarouselArrow}
+                className={styles.imageCarouselArrowLeft}
+                alt="Carousel arrow left"
+              />
             </div>
-          }
-          {!mobile() &&
-            <div className={styles.ellipseButtons}>
-              <div className={styles.ellipseButtonsInner}>
-                <div onClick={() => this.handleEllipseButtonClick(1)} className={styles.ellipseButton}></div>
-                <div onClick={() => this.handleEllipseButtonClick(2)} className={styles.ellipseButton}></div>
-                <div onClick={() => this.handleEllipseButtonClick(3)} className={styles.ellipseButton}></div>
-              </div>
+            
+            <div
+              onClick={this.handleRightButtonClick}
+              className={styles.imageCarouselButtonRight}
+            >
+              <img
+                src={imageCarouselArrow}
+                className={styles.imageCarouselArrowRight}
+                alt="Carousel arrow right"
+              />
             </div>
-          }
+          </div>
+          <div className={styles.ellipseButtons}>
+            <div className={styles.ellipseButtonsInner}>
+              <div onClick={() => this.handleEllipseButtonClick(1)} className={styles.ellipseButton}></div>
+              <div onClick={() => this.handleEllipseButtonClick(2)} className={styles.ellipseButton}></div>
+              <div onClick={() => this.handleEllipseButtonClick(3)} className={styles.ellipseButton}></div>
+            </div>
+          </div>
 
           <img
             src={studioImg1}
