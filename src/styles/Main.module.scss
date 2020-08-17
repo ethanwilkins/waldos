@@ -181,7 +181,7 @@ $decoCoin: #E6AD39;
     margin-left: 11%;
   }
   .largeText {
-    width: 80%;
+    width: 75%;
     text-align: left;
     margin-left: 0px;
   }
@@ -222,11 +222,36 @@ $decoCoin: #E6AD39;
   }
   .lineDividerLeftLower {
     visibility: hidden;
+    margin: initial;
   }
   .lineDividerRightLower {
     visibility: visible;
-    margin-bottom: 80px;
+    margin-top: -50px;
+    margin-bottom: 85px;
     width: 475px;
     left: calc(100% - 475px);
+  }
+  .footerInner {
+    width: 65%;
+    margin: 90px auto;
+    height: 250px;
+  }
+  .footerTextContainer {
+    width: 50%;
+    float: left;
+  }
+  .largeFooterText {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .footerText {
+    width: 100%;
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .map {
+    position: initial;
+    margin: initial;
+    float: right;
   }
 }
