@@ -19,6 +19,7 @@ $decoCoin: #E6AD39;
 }
 
 .body {
+  position: relative;
   margin-top: 72px;
   background: $veryIvory;
   padding-bottom: 1px;
@@ -29,6 +30,14 @@ $decoCoin: #E6AD39;
   width: 378px;
   font-size: 18px;
   line-height: 32px;
+  color: $warmInk;
+}
+
+.aboutMeDesktop {
+  @extend .aboutMe;
+  width: 778px;
+  font-size: 24px;
+  margin-top: 75px;
 }
 
 .scissorsDivider {
@@ -45,6 +54,19 @@ $decoCoin: #E6AD39;
 .scissorsIconRight {
   @extend .scissorsIconLeft;
   margin-left: 21px;
+  transform: rotate(180deg);
+}
+
+.scissorsIconLeftDesktop {
+  position: absolute;
+  top: 791px;
+  left: 232px;
+}
+
+.scissorsIconRightDesktop {
+  @extend .scissorsIconLeftDesktop;
+  left: initial;
+  right: 232px;
   transform: rotate(180deg);
 }
 
