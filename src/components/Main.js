@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 import { isAndroid } from 'react-device-detect';
-import mobile from 'is-mobile';
 
 import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
@@ -62,7 +61,7 @@ class Main extends Component {
         <div className={styles.body}>
           <ImageCarousel />
           
-          <div className={mobile() ? styles.aboutMe : styles.aboutMeDesktop}>
+          <div className={styles.aboutMe}>
             <p>
               Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
             </p>
@@ -71,35 +70,31 @@ class Main extends Component {
             </p>
           </div>
           
-          {mobile() &&
-            <div className={styles.scissorsDivider}>
-              <img
-                src={scissorsIcon}
-                className={styles.scissorsIconLeft}
-                alt="Scissors icon right"
-              />
-              <img
-                src={scissorsIcon}
-                className={styles.scissorsIconRight}
-                alt="Scissors icon right"
-              />
-            </div>
-          }
-          
-          {!mobile() &&
-            <div className={styles.scissorsContainerDesktop}>
-              <img
-                src={scissorsIconDesktop}
-                className={styles.scissorsIconLeftDesktop}
-                alt="Scissors icon right"
-              />
-              <img
-                src={scissorsIconDesktop}
-                className={styles.scissorsIconRightDesktop}
-                alt="Scissors icon right"
-              />
-            </div>
-          }
+          <div className={styles.scissorsDivider}>
+            <img
+              src={scissorsIcon}
+              className={styles.scissorsIconLeft}
+              alt="Scissors icon right"
+            />
+            <img
+              src={scissorsIcon}
+              className={styles.scissorsIconRight}
+              alt="Scissors icon right"
+            />
+          </div>
+        
+          <div className={styles.scissorsContainerDesktop}>
+            <img
+              src={scissorsIconDesktop}
+              className={styles.scissorsIconLeftDesktop}
+              alt="Scissors icon right"
+            />
+            <img
+              src={scissorsIconDesktop}
+              className={styles.scissorsIconRightDesktop}
+              alt="Scissors icon right"
+            />
+          </div>
           
           <div
             ref={this.firstDivider}

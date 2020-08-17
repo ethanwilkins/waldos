@@ -33,18 +33,15 @@ $decoCoin: #E6AD39;
   color: $warmInk;
 }
 
-.aboutMeDesktop {
-  @extend .aboutMe;
-  width: 778px;
-  font-size: 24px;
-  margin-top: 75px;
-}
-
 .scissorsDivider {
   margin-top: 11px;
   width: 71px;
   height: 25px;
   margin: 0 auto;
+}
+
+.scissorsContainerDesktop {
+  visibility: hidden;
 }
 
 .scissorsIconLeft {
@@ -149,4 +146,18 @@ $decoCoin: #E6AD39;
   margin-top: 60px;
   margin-bottom: 120px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 1080px) {
+  .aboutMe {
+    width: 778px;
+    font-size: 24px;
+    margin-top: 75px;
+  }
+  .scissorsDivider {
+    visibility: hidden;
+  }
+  .scissorsContainerDesktop {
+    visibility: visible;
+  }
 }

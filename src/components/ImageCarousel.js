@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { isAndroid } from 'react-device-detect';
 import { Swipeable } from 'react-swipeable';
-import mobile from 'is-mobile';
 
 import imageCarouselArrow from '../images/imageCarouselArrow.svg';
 import studioImg1 from '../images/studio_1.jpg';
