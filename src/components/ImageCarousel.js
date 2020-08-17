@@ -31,6 +31,7 @@ class ImageCarousel extends Component {
     });
     // haptic feedback for android
     if (isAndroid) {
+      alert("got here");
       window.navigator.vibrate(1);
     }
   };
