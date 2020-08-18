@@ -161,6 +161,40 @@ $decoCoin: #E6AD39;
   cursor: pointer;
 }
 
+// mobile small (iPhone X)
+@media only screen and (max-width: 375px) {
+  .aboutMe {
+    width: 92%;
+  }
+  .scissorsIconLarge {
+    top: -60px;
+    right: 15px;
+  }
+  .map {
+    width: 90%;
+    position: initial;
+    margin-left: 5%;
+  }
+}
+// end of mobile small
+
+// mobile very small (iPhone 5/SE)
+@media only screen and (max-width: 320px) {
+  .scissorsIconLarge {
+    top: -105px;
+    right: 5px;
+  }
+  .footerText {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .map {
+    margin-top: 30px;
+  }
+}
+// end of mobile very small
+
+// applies to desktop
 @media only screen and (min-width: 1080px) {
   .aboutMe {
     width: 778px;
@@ -249,3 +283,4 @@ $decoCoin: #E6AD39;
     float: right;
   }
 }
+// end of desktop

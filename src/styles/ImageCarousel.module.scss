@@ -97,6 +97,7 @@ $decoCoin: #E6AD39;
   z-index: -1;
 }
 
+// applies to desktop
 @media only screen and (min-width: 1080px) {
   .mobileButtons {
     visibility: hidden;
@@ -108,5 +109,13 @@ $decoCoin: #E6AD39;
   }
   .imageCarousel {
     height: 648px;
+  }
+}
+// end of desktop
+
+// mobile very small (iPhone 5/SE)
+@media only screen and (max-width: 375px) {
+  .imageCarousel {
+    height: 210px;
   }
 }
