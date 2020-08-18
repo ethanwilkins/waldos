@@ -74,7 +74,7 @@ $decoCoin: #E6AD39;
 
 .scissorsIconLarge {
   position: relative;
-  top: -70px;
+  top: -100px;
   right: 42px;
   display: block;
   float: right;
@@ -161,17 +161,17 @@ $decoCoin: #E6AD39;
   left: calc(50% - 189px);
   width: 378px;
   margin-top: 60px;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
   cursor: pointer;
 }
 
 // mobile small (iPhone X)
 @media only screen and (max-width: 375px) {
-  .aboutMe {
+  .aboutMe, .getInTouchButtonContainer {
     width: 92%;
   }
   .scissorsIconLarge {
-    top: -60px;
+    top: -90px;
     right: 15px;
   }
   .map {
