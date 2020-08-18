@@ -12,7 +12,6 @@ import scissorsIconLargeDesktop from '../images/scissorsIconLargeDesktop.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 import getInTouch from '../images/getInTouch.svg';
 import map from '../images/map.png';
-import mapDesktop from '../images/mapDesktop.png';
 
 import styles from '../styles/Main.module.scss';
 
@@ -183,18 +182,14 @@ class Main extends Component {
             </div>
             
             <a
+              className={styles.mapLink}
               href="https://www.google.com/maps/dir/Waldo's+Stylist+Studios,+213+Waldo+St,+Cary,+NC+27511//@35.7868715,-78.8475615,12z/data=!4m8!4m7!1m5!1m1!1s0x89acf3a43f9c2821:0x19c7b7b9e597d3e6!2m2!1d-78.7775206!2d35.7867526!1m0"
-            target="_blank"
-            rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={map}
                 className={styles.map}
-                alt="Map"
-              />
-              <img
-                src={mapDesktop}
-                className={styles.mapDesktop}
                 alt="Map"
               />
             </a>
