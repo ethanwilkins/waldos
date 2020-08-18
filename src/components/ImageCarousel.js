@@ -97,9 +97,21 @@ class ImageCarousel extends Component {
           </div>
           <div className={styles.ellipseButtons}>
             <div className={styles.ellipseButtonsInner}>
-              <div onClick={() => this.handleEllipseButtonClick(1)} className={styles.ellipseButton}></div>
-              <div onClick={() => this.handleEllipseButtonClick(2)} className={styles.ellipseButton}></div>
-              <div onClick={() => this.handleEllipseButtonClick(3)} className={styles.ellipseButton}></div>
+              <div
+                className={cx(styles.ellipseButton, {
+                  ellipseButtonActive: imageIndex === 1
+                })}
+                onClick={() => this.handleEllipseButtonClick(1)}></div>
+              <div
+                className={cx(styles.ellipseButton, {
+                  ellipseButtonActive: imageIndex === 2
+                })}
+                onClick={() => this.handleEllipseButtonClick(2)}></div>
+              <div
+                className={cx(styles.ellipseButton, {
+                  ellipseButtonActive: imageIndex === 3
+                })}
+                onClick={() => this.handleEllipseButtonClick(3)}></div>
             </div>
           </div>
 

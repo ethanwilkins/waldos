@@ -69,13 +69,19 @@ $decoCoin: #E6AD39;
 }
 
 .ellipseButton {
+  transition: background 500ms ease-in-out;
   border-radius: 50%;
-  background: $decoCoin;
-  width: 12px;
-  height: 12px;
+  background: $warmInk;
+  border: solid 1px $decoCoin;
+  width: 11px;
+  height: 11px;
   margin-right: 8px;
   display: inline-block;
   cursor: pointer;
+}
+
+.ellipseButtonActive {
+  background: $decoCoin;
 }
 
 .carouselImg {
