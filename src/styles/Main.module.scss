@@ -129,9 +129,13 @@ $decoCoin: #E6AD39;
   margin-bottom: 30px;
 }
 
-.getInTouch {
+.getInTouchButtonContainer {
+  margin: 0 auto;
+  width: 378px;
+}
+
+.getInTouchButton {
   @extend .noSelect;
-  margin-left: 18px;
   cursor: pointer;
 }
 
@@ -157,7 +161,7 @@ $decoCoin: #E6AD39;
   left: calc(50% - 189px);
   width: 378px;
   margin-top: 60px;
-  margin-bottom: 120px;
+  margin-bottom: 200px;
   cursor: pointer;
 }
 
@@ -240,7 +244,10 @@ $minimumApplyToDesktop: 1080px;
   .smallText {
     margin-bottom: 35px;
   }
-  .getInTouch {
+  .getInTouchButtonContainer {
+    width: 720px;
+  }
+  .getInTouchButton {
     margin-left: -4px;
     margin-top: -7px;
   }
@@ -276,7 +283,6 @@ $minimumApplyToDesktop: 1080px;
     width: 45%;
     float: left;
     margin-right: 10%;
-    margin-top: 30px;
   }
   .largeFooterText {
     width: 100%;

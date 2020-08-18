@@ -30,6 +30,27 @@ class Main extends Component {
     this.footer = React.createRef();
   }
   
+  componentDidMount() {
+    if (false) {
+      this.showSpecs();
+    }
+  }
+  
+  showSpecs = () => {
+    const specs = {
+      screenWidth: window.screen.width,
+      screenHeight: window.screen.height,
+      availScreenWidth: window.screen.availWidth,
+      availScreenHeight: window.screen.availHeight,
+      innerWidth: window.innerWidth,
+      innerHeight: window.innerHeight,
+      orientation: (window.orientation === 0 ? 'portrait' : 'landscape'),
+      devicePixelRatio: window.devicePixelRatio,
+      userAgent: navigator.userAgent
+    };
+    alert(JSON.stringify(specs));
+  };
+  
   handleInfoButtonClick = () => {
     const elementDistanceFromTop = (window.pageYOffset + this.firstDivider.current.getBoundingClientRect().top) - 70;
     const distanceScrolled = window.pageYOffset;
@@ -115,12 +136,14 @@ class Main extends Component {
               <div className={styles.mediumText}>
                 For more information, we offer free consultations to schedule appointments and determine cost.
               </div>
-              <img
-                onClick={this.handleContactButtonClick}
-                src={getInTouch}
-                className={styles.getInTouch}
-                alt="Let's Get In Touch!"
-              />
+              <div className={styles.getInTouchButtonContainer}>
+                <img
+                  onClick={this.handleContactButtonClick}
+                  src={getInTouch}
+                  className={styles.getInTouch}
+                  alt="Let's Get In Touch!"
+                />
+              </div>
             </div>
             
             <div className={styles.lineDividerRight}></div>
@@ -132,12 +155,14 @@ class Main extends Component {
               <div className={styles.mediumText}>
                 Contact us today for a free consultation on availability and pricing!
               </div>
-              <img
-                onClick={this.handleContactButtonClick}
-                src={getInTouch}
-                className={styles.getInTouch}
-                alt="Let's Get In Touch!"
-              />
+              <div className={styles.getInTouchButtonContainer}>
+                <img
+                  onClick={this.handleContactButtonClick}
+                  src={getInTouch}
+                  className={styles.getInTouch}
+                  alt="Let's Get In Touch!"
+                />
+              </div>
               <img
                 src={scissorsIconLarge}
                 className={styles.scissorsIconLarge}
