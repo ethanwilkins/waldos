@@ -191,6 +191,13 @@ $decoCoin: #E6AD39;
   .map {
     margin-top: 30px;
   }
+  .lineDividerLeft {
+    width: 250px;
+  }
+
+  .lineDividerRight {
+    left: calc(100% - 250px);
+  }
 }
 // end of mobile very small
 
@@ -284,3 +291,15 @@ $decoCoin: #E6AD39;
   }
 }
 // end of desktop
+
+// applies to iMac
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+  .scissorsIconLeftDesktop {
+    left: 130px;
+  }
+  .scissorsIconRightDesktop {
+    left: initial;
+    right: 130px;
+  }
+}
+// end of iMac
