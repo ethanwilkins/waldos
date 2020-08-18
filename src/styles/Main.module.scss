@@ -130,7 +130,9 @@ $decoCoin: #E6AD39;
 }
 
 .getInTouch {
+  @extend .noSelect;
   margin-left: 18px;
+  cursor: pointer;
 }
 
 .footer {

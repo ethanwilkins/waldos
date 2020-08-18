@@ -183,7 +183,7 @@ class Main extends Component {
             
             <a
               className={styles.mapLink}
-              href="https://www.google.com/maps/dir/Waldo's+Stylist+Studios,+213+Waldo+St,+Cary,+NC+27511//@35.7868715,-78.8475615,12z/data=!4m8!4m7!1m5!1m1!1s0x89acf3a43f9c2821:0x19c7b7b9e597d3e6!2m2!1d-78.7775206!2d35.7867526!1m0"
+              href="https://www.google.com/maps/dir/Raleigh,+NC/Waldo's+Stylist+Studios,+213+Waldo+St,+Cary,+NC+27511/@35.7734285,-78.745206,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89ac5a2f9f51e0f7:0x6790b6528a11f0ad!2m2!1d-78.6381787!2d35.7795897!1m5!1m1!1s0x89acf3a43f9c2821:0x19c7b7b9e597d3e6!2m2!1d-78.7775206!2d35.7867526"
               target="_blank"
               rel="noopener noreferrer"
             >
