@@ -28,7 +28,7 @@ $decoCoin: #E6AD39;
   top: 0px;
   left: 0px;
   background: $warmInk;
-  width: 100%;
+  width: 100vw;
   height: 72px;
   text-align: center;
   z-index: 2;
@@ -56,7 +56,7 @@ $decoCoin: #E6AD39;
 
 .navbarInner {
   transition: opacity 300ms ease-in-out;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 

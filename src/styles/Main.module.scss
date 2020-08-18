@@ -202,9 +202,10 @@ $decoCoin: #E6AD39;
 // end of mobile very small
 
 // applies to desktop
-@media only screen and (min-width: 1080px) {
+$minimumApplyToDesktop: 1080px;
+@media only screen and (min-width: $minimumApplyToDesktop) {
   .aboutMe {
-    width: 778px;
+    width: 720px;
     font-size: 24px;
     margin-top: 75px;
   }
@@ -293,7 +294,7 @@ $decoCoin: #E6AD39;
 // end of desktop
 
 // applies to iMac
-@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+@media only screen and (min-width: $minimumApplyToDesktop) and (max-width: 1280px) {
   .scissorsIconLeftDesktop {
     left: 130px;
   }
