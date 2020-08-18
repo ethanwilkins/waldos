@@ -84,7 +84,7 @@ $decoCoin: #E6AD39;
   @extend .scissorsIconLarge;
   visibility: hidden;
   top: -87px;
-  right: -170px;
+  right: 0px;
 }
 
 .lineDividerLeft {
@@ -244,11 +244,14 @@ $minimumApplyToDesktop: 1080px;
     margin-left: -4px;
     margin-top: -7px;
   }
+  .scissorsIconLarge, .scissorsDivider {
+    visibility: hidden;
+  }
   .scissorsContainerDesktop, .scissorsIconLargeDesktop {
     visibility: visible;
   }
-  .scissorsIconLarge, .scissorsDivider {
-    visibility: hidden;
+  .scissorsIconLargeDesktop {
+    right: -170px;
   }
   .lineDividerLeft {
     width: 475px;
