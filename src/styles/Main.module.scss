@@ -31,11 +31,13 @@ $decoCoin: #E6AD39;
 }
 
 .aboutMe {
+  position: relative;
   margin: 0 auto;
   width: 378px;
   font-size: 18px;
   line-height: 32px;
   color: $warmInk;
+  margin-top: 30px;
 }
 
 .scissorsDivider {
@@ -60,16 +62,12 @@ $decoCoin: #E6AD39;
 }
 
 .scissorsIconLeftDesktop {
-  position: absolute;
-  top: 791px;
-  left: 232px;
+  visibility: hidden;
+  display: none;
 }
 
 .scissorsIconRightDesktop {
   @extend .scissorsIconLeftDesktop;
-  left: initial;
-  right: 232px;
-  transform: rotate(180deg);
 }
 
 .scissorsIconLarge {
@@ -206,12 +204,18 @@ $decoCoin: #E6AD39;
 // end of mobile very small
 
 // applies to desktop
-$minimumApplyToDesktop: 1080px;
+$minimumApplyToDesktop: 1024px;
 @media only screen and (min-width: $minimumApplyToDesktop) {
   .aboutMe {
-    width: 720px;
+    width: 966px;
     font-size: 24px;
-    margin-top: 75px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .aboutMeText {
+    float: left;
+    width: 778px;
+    margin-right: 50px;
   }
   .sectionsContainer {
     width: 75%;
@@ -254,8 +258,18 @@ $minimumApplyToDesktop: 1080px;
   .scissorsIconLarge, .scissorsDivider {
     visibility: hidden;
   }
-  .scissorsContainerDesktop, .scissorsIconLargeDesktop {
+  .scissorsIconLargeDesktop, .scissorsIconLeftDesktop {
     visibility: visible;
+  }
+  .scissorsIconLeftDesktop {
+    float: left;
+    margin-right: 50px;
+    margin-top: 80px;
+    display: initial;
+  }
+  .scissorsIconRightDesktop {
+    transform: rotate(180deg);
+    margin: 80px 0;
   }
   .scissorsIconLargeDesktop {
     right: -170px;
@@ -304,12 +318,6 @@ $minimumApplyToDesktop: 1080px;
 
 // applies to iMac
 @media only screen and (min-width: $minimumApplyToDesktop) and (max-width: 1280px) {
-  .scissorsIconLeftDesktop {
-    left: 130px;
-  }
-  .scissorsIconRightDesktop {
-    left: initial;
-    right: 130px;
-  }
+
 }
 // end of iMac

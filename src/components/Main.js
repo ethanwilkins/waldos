@@ -85,36 +85,35 @@ class Main extends Component {
           <ImageCarousel />
           
           <div className={styles.aboutMe}>
-            <p>
-              Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
-            </p>
-            <p>
-              Paul owned and operated many businesses during his time in Hilton Head Island. For the past 20 years, he has been styling out of Waldos Stylist Studios in Cary.
-            </p>
+            <img
+              src={scissorsIconDesktop}
+              className={styles.scissorsIconLeftDesktop}
+              alt="Scissors icon left"
+            />
+            <div className={styles.aboutMeText}>
+              <p>
+                Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
+              </p>
+              <p>
+                Paul owned and operated many businesses during his time in Hilton Head Island. For the past 20 years, he has been styling out of Waldos Stylist Studios in Cary.
+              </p>
+            </div>
+            <img
+              src={scissorsIconDesktop}
+              className={styles.scissorsIconRightDesktop}
+              alt="Scissors icon right"
+            />
           </div>
           
           <div className={styles.scissorsDivider}>
             <img
               src={scissorsIcon}
               className={styles.scissorsIconLeft}
-              alt="Scissors icon right"
+              alt="Scissors icon left"
             />
             <img
               src={scissorsIcon}
               className={styles.scissorsIconRight}
-              alt="Scissors icon right"
-            />
-          </div>
-        
-          <div className={styles.scissorsContainerDesktop}>
-            <img
-              src={scissorsIconDesktop}
-              className={styles.scissorsIconLeftDesktop}
-              alt="Scissors icon right"
-            />
-            <img
-              src={scissorsIconDesktop}
-              className={styles.scissorsIconRightDesktop}
               alt="Scissors icon right"
             />
           </div>
