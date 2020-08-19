@@ -30,7 +30,7 @@ class Main extends Component {
   }
   
   componentDidMount() {
-    if (false) {
+    if (true) {
       this.showSpecs();
     }
   }
