@@ -215,10 +215,11 @@ $minimumApplyToDesktop: 1024px;
     margin-right: 50px;
   }
   .sectionsContainer {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 80px;
+    margin-bottom: 80px;
   }
   .customerSection {
     float: left;
@@ -270,8 +271,8 @@ $minimumApplyToDesktop: 1024px;
     margin: 80px 0;
   }
   .scissorsIconLargeDesktop {
-    margin-top: -40px;
-    margin-right: 60px;
+    margin-top: -30px;
+    margin-right: 180px;
   }
   .lineDividerLeft {
     width: 475px;
@@ -318,6 +319,26 @@ $minimumApplyToDesktop: 1024px;
 // applies to iMac and up
 @media only screen and (min-width: 1280px) {
   .scissorsIconLargeDesktop {
+    margin-top: -40px;
+    margin-right: 80px;
   }
 }
 // end of iMac
+
+// applies to Waldo desktop spec in Figma
+@media only screen and (min-width: 1440px) {
+  .scissorsIconLargeDesktop {
+    margin-top: -40px;
+    margin-right: 30px;
+  }
+}
+// end of Waldo spec
+
+// applies to largest desktops
+@media only screen and (min-width: 1550px) {
+  .scissorsIconLargeDesktop {
+    margin-top: -10px;
+    margin-right: 70px;
+  }
+}
+// end of largest desktop
