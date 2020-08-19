@@ -97,8 +97,10 @@ $decoCoin: #E6AD39;
   z-index: -1;
 }
 
+$minimumApplyToDesktop: 985px;
+
 // applies to desktop
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: $minimumApplyToDesktop) {
   .mobileButtons {
     visibility: hidden;
     z-index: -1;

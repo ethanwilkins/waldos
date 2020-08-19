@@ -135,7 +135,9 @@ $decoCoin: #E6AD39;
   top: -20vh;
 }
 
-@media only screen and (min-width: 1024px) {
+$minimumApplyToDesktop: 985px;
+
+@media only screen and (min-width: $minimumApplyToDesktop) {
   .innerMobile {
     visibility: hidden;
     z-index: -1;

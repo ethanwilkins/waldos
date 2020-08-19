@@ -161,13 +161,18 @@ $decoCoin: #E6AD39;
   cursor: pointer;
 }
 
-$minimumApplyToDesktop: 1024px;
+$minimumApplyToDesktop: 985px;
 
+// applies to in between mobile and desktop/tablets (portrait)
 @media only screen and (min-width: 415px) and (max-width: 775px) {
   .scissorsIconLarge {
     margin-top: -40px;
   }
+  .customerSectionLineBreak {
+    display: none;
+  }
 }
+// end of intermezzo
 
 // mobile small (iPhone X)
 @media only screen and (max-width: 375px) {
