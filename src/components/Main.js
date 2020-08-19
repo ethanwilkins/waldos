@@ -161,17 +161,17 @@ class Main extends Component {
                   className={styles.getInTouch}
                   alt="Let's Get In Touch!"
                 />
+                <img
+                  src={scissorsIconLarge}
+                  className={styles.scissorsIconLarge}
+                  alt="Large scissors icon"
+                />
+                <img
+                  src={scissorsIconLargeDesktop}
+                  className={styles.scissorsIconLargeDesktop}
+                  alt="Large scissors icon"
+                />
               </div>
-              <img
-                src={scissorsIconLarge}
-                className={styles.scissorsIconLarge}
-                alt="Large scissors icon"
-              />
-              <img
-                src={scissorsIconLargeDesktop}
-                className={styles.scissorsIconLargeDesktop}
-                alt="Large scissors icon"
-              />
             </div>
           </div>
           

@@ -71,18 +71,14 @@ $decoCoin: #E6AD39;
 }
 
 .scissorsIconLarge {
-  position: relative;
-  top: -100px;
-  right: 42px;
-  display: block;
   float: right;
+  margin-top: -70px;
+  margin-right: 25px;
 }
 
 .scissorsIconLargeDesktop {
   @extend .scissorsIconLarge;
-  visibility: hidden;
-  top: -87px;
-  right: 0px;
+  display: none;
 }
 
 .lineDividerLeft {
@@ -135,6 +131,7 @@ $decoCoin: #E6AD39;
 .getInTouchButton {
   @extend .noSelect;
   cursor: pointer;
+  float: left;
 }
 
 .footer {
@@ -260,6 +257,7 @@ $minimumApplyToDesktop: 1024px;
   }
   .scissorsIconLargeDesktop, .scissorsIconLeftDesktop {
     visibility: visible;
+    display: initial;
   }
   .scissorsIconLeftDesktop {
     float: left;
@@ -272,7 +270,8 @@ $minimumApplyToDesktop: 1024px;
     margin: 80px 0;
   }
   .scissorsIconLargeDesktop {
-    right: -170px;
+    margin-top: -40px;
+    margin-right: 60px;
   }
   .lineDividerLeft {
     width: 475px;
@@ -316,7 +315,9 @@ $minimumApplyToDesktop: 1024px;
 }
 // end of desktop
 
-// applies to iMac
-@media only screen and (min-width: $minimumApplyToDesktop) and (max-width: 1280px) {
+// applies to iMac and up
+@media only screen and (min-width: 1280px) {
+  .scissorsIconLargeDesktop {
+  }
 }
 // end of iMac
