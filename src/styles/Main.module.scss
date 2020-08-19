@@ -33,7 +33,7 @@ $decoCoin: #E6AD39;
 .aboutMe {
   position: relative;
   margin: 0 auto;
-  width: 378px;
+  width: 91%;
   font-size: 18px;
   line-height: 32px;
   color: $warmInk;
@@ -125,7 +125,7 @@ $decoCoin: #E6AD39;
 
 .getInTouchButtonContainer {
   margin: 0 auto;
-  width: 378px;
+  width: 91%;
 }
 
 .getInTouchButton {
@@ -149,6 +149,7 @@ $decoCoin: #E6AD39;
 .footerText {
   @extend .aboutMe;
   color: $veryIvory;
+  margin-top: initial;
 }
 
 .map {
@@ -160,14 +161,22 @@ $decoCoin: #E6AD39;
   cursor: pointer;
 }
 
+$minimumApplyToDesktop: 1024px;
+
+@media only screen and (min-width: 415px) and (max-width: 775px) {
+  .scissorsIconLarge {
+    margin-top: -40px;
+  }
+}
+
 // mobile small (iPhone X)
 @media only screen and (max-width: 375px) {
   .aboutMe, .getInTouchButtonContainer {
     width: 92%;
   }
   .scissorsIconLarge {
-    top: -90px;
-    right: 15px;
+    margin-top: -50px;
+    margin-right: 5px;
   }
   .map {
     width: 90%;
@@ -180,8 +189,8 @@ $decoCoin: #E6AD39;
 // mobile very small (iPhone 5/SE)
 @media only screen and (max-width: 320px) {
   .scissorsIconLarge {
-    top: -105px;
-    right: 5px;
+    margin-top: -110px;
+    margin-right: 0px;
   }
   .footerText {
     font-size: 16px;
@@ -201,7 +210,6 @@ $decoCoin: #E6AD39;
 // end of mobile very small
 
 // applies to desktop
-$minimumApplyToDesktop: 1024px;
 @media only screen and (min-width: $minimumApplyToDesktop) {
   .aboutMe {
     width: 966px;
@@ -224,6 +232,9 @@ $minimumApplyToDesktop: 1024px;
   .customerSection {
     float: left;
     width: 44%;
+  }
+  .customerSectionLineBreak {
+    display: none;
   }
   .stylistSection {
     @extend .customerSection;

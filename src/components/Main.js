@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 import { isAndroid } from 'react-device-detect';
-import mobile from 'is-mobile';
 
 import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
@@ -125,7 +124,7 @@ class Main extends Component {
           <div className={styles.sectionsContainer}>
             <div className={styles.customerSection}>
               <div className={styles.largeText}>
-                Looking For A{!mobile() ? <br/> : ''} Talented Stylist That You Can Trust With Your Hair?
+                Looking For A<br className={styles.customerSectionLineBreak} /> Talented Stylist That You Can Trust With Your Hair?
               </div>
               <div className={styles.smallText}>
                 We offer haircut, color, and
