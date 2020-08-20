@@ -161,18 +161,7 @@ $decoCoin: #E6AD39;
   cursor: pointer;
 }
 
-$minimumApplyToDesktop: 985px;
-
-// applies to in between mobile and desktop/tablets (portrait)
-@media only screen and (min-width: 415px) and (max-width: 775px) {
-  .scissorsIconLarge {
-    margin-top: -40px;
-  }
-  .customerSectionLineBreak {
-    display: none;
-  }
-}
-// end of intermezzo
+$minimumApplyToDesktop: 1080px;
 
 // mobile small (iPhone X)
 @media only screen and (max-width: 375px) {
@@ -213,6 +202,42 @@ $minimumApplyToDesktop: 985px;
   }
 }
 // end of mobile very small
+
+// applies to in between mobile and desktop/tablets (portrait)
+@media only screen and (min-width: 415px) and (max-width: $minimumApplyToDesktop) {
+  .customerSectionLineBreak {
+    display: none;
+  }
+  .aboutMe {
+    width: 91%;
+    font-size: 19px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .aboutMeText {
+    float: left;
+    width: 60%;
+    margin-right: 50px;
+  }
+  .scissorsDivider {
+    visibility: hidden;
+  }
+  .scissorsIconLeftDesktop {
+    visibility: visible;
+    display: initial;
+  }
+  .scissorsIconLeftDesktop {
+    float: left;
+    margin-right: 50px;
+    margin-top: 80px;
+    display: initial;
+  }
+  .scissorsIconRightDesktop {
+    transform: rotate(180deg);
+    margin: 80px 0;
+  }
+}
+// end of intermezzo
 
 // applies to desktop
 @media only screen and (min-width: $minimumApplyToDesktop) {

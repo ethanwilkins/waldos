@@ -97,7 +97,7 @@ $decoCoin: #E6AD39;
   z-index: -1;
 }
 
-$minimumApplyToDesktop: 985px;
+$minimumApplyToDesktop: 834px;
 
 // applies to desktop
 @media only screen and (min-width: $minimumApplyToDesktop) {
@@ -114,6 +114,17 @@ $minimumApplyToDesktop: 985px;
   }
 }
 // end of desktop
+
+// responsive design for tablets
+@media only screen and (min-width: 834px) and (max-width: 1080px) {
+  .imageCarousel {
+    height: 600px;
+  }
+  .ellipseButtons {
+    top: 520px;
+  }
+}
+// end of responsive design
 
 // mobile very small (iPhone 5/SE)
 @media only screen and (max-width: 375px) {
