@@ -69,7 +69,7 @@ $decoCoin: #E6AD39;
 }
 
 .ellipseButton {
-  transition: background 500ms ease-in-out;
+  transition: background 300ms ease-in-out;
   border-radius: 50%;
   background: $warmInk;
   border: solid 1px $decoCoin;
@@ -85,7 +85,7 @@ $decoCoin: #E6AD39;
 }
 
 .carouselImg {
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
   position: absolute;
   top: 0px;
   left: 0px;
