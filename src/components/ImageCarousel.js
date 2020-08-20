@@ -21,13 +21,30 @@ const swipeableConfig = {
 
 class ImageCarousel extends Component {
   state = {
-    imageIndex: 1
+    imageIndex: 1,
+    interactedWith: false
   };
+   
+  componentDidMount() {
+    this.imageSwitch = setInterval(() => {
+      const { imageIndex, interactedWith } = this.state;
+      if (!interactedWith) {
+        this.setState({
+          imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1)
+        });
+      }      
+    }, 8000);
+  }
+  
+  componentWillUnmount() {
+    clearInterval(this.imageSwitch);
+  }
   
   handleLeftButtonClick = () => {
     const { imageIndex } = this.state;
     this.setState({
-      imageIndex: (imageIndex === 1 ? 3 : imageIndex - 1)
+      imageIndex: (imageIndex === 1 ? 3 : imageIndex - 1),
+      interactedWith: true
     });
     // haptic feedback for android
     if (isAndroid) {
@@ -38,7 +55,8 @@ class ImageCarousel extends Component {
   handleRightButtonClick = () => {
     const { imageIndex } = this.state;
     this.setState({
-      imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1)
+      imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1),
+      interactedWith: true
     });
     // haptic feedback for android
     if (isAndroid) {
@@ -50,19 +68,22 @@ class ImageCarousel extends Component {
     const { imageIndex } = this.state;
     if (direction === 'Left') {
       this.setState({
-        imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1)
+        imageIndex: (imageIndex === 3 ? 1 : imageIndex + 1),
+        interactedWith: true
       });
     }
     else if (direction === 'Right') {
       this.setState({
-        imageIndex: (imageIndex === 1 ? 3 : imageIndex - 1)
+        imageIndex: (imageIndex === 1 ? 3 : imageIndex - 1),
+        interactedWith: true
       });
     }
   };
   
   handleEllipseButtonClick = (imageIndex) => {
     this.setState({
-      imageIndex: imageIndex
+      imageIndex: imageIndex,
+      interactedWith: true
     });
   };
   
