@@ -160,7 +160,7 @@ class Main extends Component {
             
             <div className={styles.stylistSection}>
               <div className={styles.largeText}>
-                Looking For A Welcoming Studio Space To Rent?
+                Looking For A Welcoming<br className={styles.stylistSectionLineBreak} /> Studio Space To Rent?
               </div>
               <div className={styles.mediumText}>
                 Contact us today for a free consultation on availability and pricing!

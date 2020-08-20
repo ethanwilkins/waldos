@@ -218,9 +218,6 @@ $minimumApplyToDesktop: 1080px;
 
 // applies to Responsive design, tablet
 @media only screen and (min-width: 620px) and (max-width: $minimumApplyToDesktop) {
-  .customerSectionLineBreak {
-    display: none;
-  }
   .aboutMe {
     max-width: 572px;
     font-size: 19px;
@@ -234,6 +231,19 @@ $minimumApplyToDesktop: 1080px;
   }
   .largeText {
     font-size: 26px;
+    margin-bottom: 5px;
+    line-height: 27px;
+  }
+  .mediumText, .smallText {
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 27px;
+  }
+  .mediumText {
+    margin-bottom: 15px;
+  }
+  .stylistSection, .customerSection {
+    width: 90%;
   }
   .scissorsDivider {
     visibility: hidden;
@@ -325,11 +335,11 @@ $minimumApplyToDesktop: 1080px;
     float: left;
     width: 44%;
   }
-  .customerSectionLineBreak {
+  .customerSectionLineBreak, .stylistSectionLineBreak {
     display: none;
   }
   .stylistSection {
-    @extend .customerSection;
+    width: 44%;
     margin-left: 11%;
     float: right;
   }
