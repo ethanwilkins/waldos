@@ -6,8 +6,10 @@ import Navbar from '../components/Navbar';
 import ImageCarousel from '../components/ImageCarousel';
 
 import scissorsIcon from '../images/scissorsIcon.svg';
+import scissorsIconTablet from '../images/scissorsIconTablet.svg';
 import scissorsIconDesktop from '../images/scissorsIconDesktop.svg';
 import scissorsIconLargeDesktop from '../images/scissorsIconLargeDesktop.svg';
+import scissorsIconLargeTablet from '../images/scissorsIconLargeTablet.svg';
 import scissorsIconLarge from '../images/scissorsIconLarge.svg';
 import getInTouch from '../images/getInTouch.svg';
 import map from '../images/map.png';
@@ -89,6 +91,11 @@ class Main extends Component {
               className={styles.scissorsIconLeftDesktop}
               alt="Scissors icon left"
             />
+            <img
+              src={scissorsIconTablet}
+              className={styles.scissorsIconLeftTablet}
+              alt="Scissors icon left"
+            />
             <div className={styles.aboutMeText}>
               <p>
                 Waldos Stylist Studios is run by Paul Masouras, who has been in the hairstyling business for many years. (Since 1990 in fact!)
@@ -100,6 +107,11 @@ class Main extends Component {
             <img
               src={scissorsIconDesktop}
               className={styles.scissorsIconRightDesktop}
+              alt="Scissors icon right"
+            />
+            <img
+              src={scissorsIconTablet}
+              className={styles.scissorsIconRightTablet}
               alt="Scissors icon right"
             />
           </div>
@@ -168,6 +180,11 @@ class Main extends Component {
                 <img
                   src={scissorsIconLargeDesktop}
                   className={styles.scissorsIconLargeDesktop}
+                  alt="Large scissors icon"
+                />
+                <img
+                  src={scissorsIconLargeTablet}
+                  className={styles.scissorsIconLargeTablet}
                   alt="Large scissors icon"
                 />
               </div>

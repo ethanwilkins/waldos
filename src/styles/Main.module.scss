@@ -70,13 +70,26 @@ $decoCoin: #E6AD39;
   @extend .scissorsIconLeftDesktop;
 }
 
+.scissorsIconLeftTablet {
+  @extend .scissorsIconLeftDesktop;
+}
+
+.scissorsIconRightTablet {
+  @extend .scissorsIconLeftTablet;
+}
+
 .scissorsIconLarge {
   float: right;
   margin-top: -70px;
   margin-right: 25px;
 }
 
-.scissorsIconLargeDesktop {
+.scissorsIconLargeDesktop, .scissorsIconLargeTablet {
+  @extend .scissorsIconLarge;
+  display: none;
+}
+
+.scissorsIconLargeTablet {
   @extend .scissorsIconLarge;
   display: none;
 }
@@ -203,41 +216,61 @@ $minimumApplyToDesktop: 1080px;
 }
 // end of mobile very small
 
-// applies to in between mobile and desktop/tablets (portrait)
-@media only screen and (min-width: 415px) and (max-width: $minimumApplyToDesktop) {
+// applies to Responsive design, tablet
+@media only screen and (min-width: 620px) and (max-width: $minimumApplyToDesktop) {
   .customerSectionLineBreak {
     display: none;
   }
   .aboutMe {
-    width: 91%;
+    max-width: 572px;
     font-size: 19px;
     margin-top: 50px;
     overflow: hidden;
   }
   .aboutMeText {
     float: left;
-    width: 60%;
-    margin-right: 50px;
+    width: 450px;
+    margin-right: 28px;
+  }
+  .largeText {
+    font-size: 26px;
   }
   .scissorsDivider {
     visibility: hidden;
   }
-  .scissorsIconLeftDesktop {
+  .scissorsIconLeftTablet {
     visibility: visible;
     display: initial;
-  }
-  .scissorsIconLeftDesktop {
     float: left;
-    margin-right: 50px;
+    margin-right: 28px;
     margin-top: 80px;
     display: initial;
   }
-  .scissorsIconRightDesktop {
+  .scissorsIconRightTablet {
     transform: rotate(180deg);
     margin: 80px 0;
   }
+  .scissorsIconLarge {
+    display: none;
+  }
+  .scissorsIconLargeTablet {
+    display: initial;
+  }
+  .sectionsContainer {
+    max-width: 572px;
+    margin: 0 auto;
+  }
+  .lineDividerRight, .lineDividerLeftLower {
+    visibility: hidden;
+    margin: initial;
+  }
+  .lineDividerRightLower {
+    visibility: visible;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
 }
-// end of intermezzo
+// end of responsive design
 
 // applies to desktop
 @media only screen and (min-width: $minimumApplyToDesktop) {
@@ -319,6 +352,9 @@ $minimumApplyToDesktop: 1080px;
   }
   .lineDividerLeft {
     width: 475px;
+  }
+  .scissorsIconLeftTablet {
+    display: none;
   }
   .lineDividerRight, .lineDividerLeftLower {
     visibility: hidden;
