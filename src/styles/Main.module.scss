@@ -80,7 +80,7 @@ $decoCoin: #E6AD39;
 
 .scissorsIconLarge {
   float: right;
-  margin-top: -70px;
+  margin-top: -60px;
   margin-right: 25px;
 }
 
@@ -153,6 +153,10 @@ $decoCoin: #E6AD39;
   background: $warmInk;
 }
 
+.footerTextContainer {
+  margin-left: calc(50% - 210px);
+}
+
 .largeFooterText {
   @extend .largeText;
   white-space: nowrap;
@@ -220,8 +224,9 @@ $minimumApplyToDesktop: 1080px;
 @media only screen and (min-width: 620px) and (max-width: $minimumApplyToDesktop) {
   .aboutMe {
     max-width: 572px;
-    font-size: 19px;
-    margin-top: 50px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 20px;
     overflow: hidden;
   }
   .aboutMeText {
@@ -265,10 +270,18 @@ $minimumApplyToDesktop: 1080px;
   }
   .scissorsIconLargeTablet {
     display: initial;
+    margin-top: -160px;
+    margin-right: -140px;
   }
   .sectionsContainer {
     max-width: 500px;
     margin: 0 auto;
+  }
+  .getInTouchButtonContainer {
+    margin-bottom: 25px;
+  }
+  .lineDividerLeft {
+    margin-top: 5px;
   }
   .lineDividerRight, .lineDividerLeftLower {
     visibility: hidden;
@@ -276,7 +289,7 @@ $minimumApplyToDesktop: 1080px;
   }
   .lineDividerRightLower {
     visibility: visible;
-    margin-top: 150px;
+    margin-top: 10px;
     margin-bottom: 50px;
   }
   .footerInner {
@@ -286,22 +299,26 @@ $minimumApplyToDesktop: 1080px;
     height: 285px;
   }
   .footerTextContainer {
-    width: 25%;
+    margin-top: 5px;
+    margin-left: initial;
+    width: 50%;
     float: left;
-    margin-right: 10%;
   }
   .largeFooterText {
     width: 100%;
     margin: initial;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     font-size: 27px;
   }
   .footerText {
     width: 100%;
     margin-top: 0px;
     font-size: 18px;
+    line-height: 30px;
+    white-space: nowrap;
   }
   .map {
+    width: 50%;
     max-width: 420px;
     position: initial;
     margin: initial;
@@ -414,7 +431,9 @@ $minimumApplyToDesktop: 1080px;
   .footerTextContainer {
     width: 45%;
     float: left;
+    margin-top: 15px;
     margin-right: 10%;
+    margin-left: initial;
   }
   .largeFooterText {
     width: 100%;
