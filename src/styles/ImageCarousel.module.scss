@@ -15,7 +15,7 @@ $decoCoin: #E6AD39;
 .imageCarousel {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: calc(100vw * 0.56);
   overflow: hidden;
   background: $warmInk;
 }
@@ -23,7 +23,7 @@ $decoCoin: #E6AD39;
 .imageCarouselButtonLeft {
   @extend .noSelect;
   position: absolute;
-  top: 152px;
+  top: calc(100vw * 0.3);
   left: 15px;
   width: 72px;
   height: 32px;
@@ -56,7 +56,7 @@ $decoCoin: #E6AD39;
   width: 144px;
   height: 36px;
   position: absolute;
-  top: 576px;
+  top: calc((100vw * 0.56) - 100px);
   left: calc(50% - 72px);
   visibility: hidden;
   z-index: -1;
@@ -97,10 +97,11 @@ $decoCoin: #E6AD39;
   z-index: -1;
 }
 
-$minimumApplyToDesktop: 834px;
+$desktopWidth: 1080px;
+$tabletWidth: 834px;
 
-// applies to desktop
-@media only screen and (min-width: $minimumApplyToDesktop) {
+// applies to tablet and up
+@media only screen and (min-width: $tabletWidth) {
   .mobileButtons {
     visibility: hidden;
     z-index: -1;
@@ -110,18 +111,24 @@ $minimumApplyToDesktop: 834px;
     z-index: 1;
   }
   .imageCarousel {
-    height: 648px;
+  }
+}
+// end of tablet and up
+
+// applies to desktop
+@media only screen and (min-width: $desktopWidth) {
+  .imageCarousel {
+  }
+  .ellipseButtons {
   }
 }
 // end of desktop
 
-// responsive design for tablets
-@media only screen and (min-width: 834px) and (max-width: 1080px) {
+// responsive design for tablets (only within this range)
+@media only screen and (min-width: $tabletWidth) and (max-width: $desktopWidth) {
   .imageCarousel {
-    height: 600px;
   }
   .ellipseButtons {
-    top: 520px;
   }
 }
 // end of responsive design
@@ -129,6 +136,5 @@ $minimumApplyToDesktop: 834px;
 // mobile very small (iPhone 5/SE)
 @media only screen and (max-width: 375px) {
   .imageCarousel {
-    height: 210px;
   }
 }
