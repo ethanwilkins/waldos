@@ -97,7 +97,6 @@ $decoCoin: #E6AD39;
   z-index: -1;
 }
 
-$desktopWidth: 1080px;
 $tabletWidth: 834px;
 
 // applies to tablet and up
@@ -114,27 +113,3 @@ $tabletWidth: 834px;
   }
 }
 // end of tablet and up
-
-// applies to desktop
-@media only screen and (min-width: $desktopWidth) {
-  .imageCarousel {
-  }
-  .ellipseButtons {
-  }
-}
-// end of desktop
-
-// responsive design for tablets (only within this range)
-@media only screen and (min-width: $tabletWidth) and (max-width: $desktopWidth) {
-  .imageCarousel {
-  }
-  .ellipseButtons {
-  }
-}
-// end of responsive design
-
-// mobile very small (iPhone 5/SE)
-@media only screen and (max-width: 375px) {
-  .imageCarousel {
-  }
-}
