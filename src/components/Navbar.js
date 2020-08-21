@@ -144,7 +144,12 @@ class Navbar extends Component {
               className={styles.navbarButton}
               alt="X icon"
             />
-            <div className={styles.menu}>
+            <div
+              className={cx(styles.menu, {
+                menuClosed: !open
+              })}
+            
+            >
               <div
                 onClick={this.handleInfoButtonClick}
                 className={styles.menuButton}>

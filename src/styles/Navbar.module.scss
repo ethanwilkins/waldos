@@ -62,11 +62,14 @@ $decoCoin: #E6AD39;
 
 .fadedOut {
   opacity: 0;
-  z-index: -5;
 }
 
 .menu {
   margin-top: 17px;
+}
+
+.menuClosed {
+  margin-top: -100vh;
 }
 
 .menuButton {
