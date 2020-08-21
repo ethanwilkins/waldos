@@ -138,7 +138,7 @@ class ImageCarousel extends Component {
 
           <img
             src={studioImg1}
-            className={cx(styles.carouselImg, {
+            className={cx(styles.carouselImg1, {
               fadedOut: imageIndex !== 1
             })}
             alt="Studio"
@@ -146,7 +146,7 @@ class ImageCarousel extends Component {
 
           <img
             src={studioImg2}
-            className={cx(styles.carouselImg, {
+            className={cx(styles.carouselImg2, {
               fadedOut: imageIndex !== 2
             })}
             alt="Studio"
@@ -154,7 +154,7 @@ class ImageCarousel extends Component {
 
           <img
             src={studioImg3}
-            className={cx(styles.carouselImg, {
+            className={cx(styles.carouselImg3, {
               fadedOut: imageIndex !== 3
             })}
             alt="Studio"

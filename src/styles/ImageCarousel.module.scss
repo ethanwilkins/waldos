@@ -92,6 +92,18 @@ $decoCoin: #E6AD39;
   width: 100%;
 }
 
+.carouselImg1, .carouselImg2, .carouselImg3 {
+  @extend .carouselImg;
+}
+
+.carouselImg1 {
+  margin-top: -60px;
+}
+
+.carouselImg3 {
+  margin-top: -50px;
+}
+
 .fadedOut {
   opacity: 0;
   z-index: -1;
@@ -109,7 +121,8 @@ $tabletWidth: 834px;
     visibility: visible;
     z-index: 1;
   }
-  .imageCarousel {
+  .carouselImg1, .carouselImg3 {
+    margin-top: -120px;
   }
 }
 // end of tablet and up
