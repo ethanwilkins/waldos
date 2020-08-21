@@ -221,7 +221,7 @@ $minimumApplyToDesktop: 1080px;
 // end of mobile very small
 
 // applies to Responsive design, tablet
-@media only screen and (min-width: 620px) and (max-width: $minimumApplyToDesktop) {
+@media only screen and (min-width: 620px) and (max-width: $minimumApplyToDesktop - 1) {
   .aboutMe {
     max-width: 572px;
     font-size: 20px;
