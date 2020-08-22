@@ -103,7 +103,7 @@ class Navbar extends Component {
       <div className={styles.navbar} ref={this.navbar}>
         <div className={styles.innerDesktop}>
           <div onClick={this.handleLogoClick} className={styles.desktopName}>
-            Waldo's Stylist Studio
+            Waldos Stylist Studio
           </div>
           <div onClick={this.handleInfoButtonClick} className={styles.desktopInfoButton}>
             Info
