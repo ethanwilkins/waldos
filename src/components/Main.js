@@ -208,10 +208,10 @@ class Main extends Component {
                 Waldos Stylist Studio
               </div>
               <div className={styles.footerText}>
-                Phone number: 919.606.5629
+                Phone number: <a className={styles.contactLink} href="tel:+19196065629">919.606.5629</a>
               </div>
               <div className={styles.footerText}>
-                Email: Masouraspaul@gmail.com
+                Email: <a className={styles.contactLink} href="mailto:masouraspaul@gmail.com" >Masouraspaul@gmail.com</a>
               </div>
               <div className={styles.footerText}>
                 Address: 213 Waldo St. Cary NC 27511
