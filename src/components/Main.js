@@ -205,7 +205,7 @@ class Main extends Component {
                 Let's Get In Touch!
               </div>
               <div className={styles.footerText}>
-                Waldo Stylist Studio
+                Waldos Stylist Studio
               </div>
               <div className={styles.footerText}>
                 Phone number: 919.606.5629
